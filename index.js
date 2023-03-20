@@ -10,8 +10,14 @@ const card=document.querySelectorAll("article");
 const container=document.getElementById("container");
 const btnbagg=document.querySelectorAll(".btnbag");
 container.addEventListener("click",(eo) => {
-    if(eo.target.className=="fa-solid fa-house"){
-        navv.style.display="block"
+    if(eo.target.className == "fa-solid fa-house"){
+       if(navv.classList.contains('show')) {
+        
+           navv.classList.remove('show')
+        }else {
+            
+           navv.classList.add('show')
+       }
        
     }
     
@@ -22,7 +28,7 @@ container.addEventListener("click",(eo) => {
  container.addEventListener("click",(eo) => {
         card.forEach(item => {
             if(eo.target.className=="btnbag"){
-                item.style.border="2px solid black "
+                item.style.border="2px solid black"
                 
         }
         
@@ -36,14 +42,14 @@ container.addEventListener("click",(eo) => {
  
  function adding(){
     const newlis=document.createElement("article")
-    let textContent=` <img id="2" src="t4.jpg" alt="" srcset="">
+    let textContent=` <img id="2" src="emoje/t4.jpg" alt="" srcset="">
     <p>shirt 1 new</p>
     
     <div class="btn">
         <p>25$</p>
         <button class="btnbag">list</button>
     </div>`
-    newlis.appendChild(textContent)
+    newlis.innerHTML = textContent
     clothes.appendChild(newlis)
 
 

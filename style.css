@@ -2,9 +2,15 @@
     margin: 0;
     padding: 0;
 }
+.show {
+    display: block !important;
+}
 header{
     display:flex;
     justify-content: space-between;
+}
+header > i {
+    cursor: pointer;
 }
 #container{
     border: 2px solid red;
@@ -30,16 +36,13 @@ img{
 }
 #lis{
     width: 30%;
-    
     position: absolute;
     right: 38px;
     text-align: center;
     height: 100vh;
     background-color: azure;
-    
     box-shadow: 0 0 3px ;
     display: none;
-   
 }
 .db{
     display: block;
