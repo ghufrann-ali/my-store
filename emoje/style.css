@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+}
+#container{
+    border: 2px solid red;
+    width: 90%;
+    margin: 0 auto;
+}
+img{
+    width: 200px;
+    height: 10em;
+    
+}
+#imgcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} header{
+    border-bottom: 1px solid lightgray;
+
+}
+.sty{
+    border: 3px solid black;
+    
+}
+#lis{
+    width: 30%;
+    
+    position: absolute;
+    right: 38px;
+    text-align: center;
+    height: 100vh;
+    background-color: azure;
+    
+    box-shadow: 0 0 3px ;
+    display: none;
+   
+}
+.db{
+    display: block;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+#mycart{
+    border-bottom: 2px solid black;
+    padding: 4px;
+    width: 80%;
+    margin: 0 auto;
+}
+#total{
+    text-align: right;
+    margin-bottom: 20px;
+    
+}
+#btnbuy{
+    padding: 5px;
+    border-color: red;
+    
+    
+}
